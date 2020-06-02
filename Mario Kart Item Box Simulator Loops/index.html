@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mario Kart Item Box Simulator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="main">
+    <h1>Mario Kart Item Box Simulator</h1>
+
+    <!--  Instructions -->
+    Choose a racer position, then click the picture to simulate opening a Mario Kart Item Box. In theory, when choosing positions 1-6 you will have a 45% collecting a banana, a 35% getting a green shell, 15% for a star, 4% recieving a golden mushroom and only 1% chance collecting bullet bill. When you choose positions 7-12, you will have a 5% collecting a banana, a 5% getting a green shell, 25% for a star, 35% recieving a golden mushroom and a 30% chance collecting bullet bill.</p>
+
+    <p>Choose a racing position(1 to 12): <input id='position' type="number" ></p>
+
+    <!-- Image & Results  -->
+<p class="center"><img id="mainImg" src="images/item-box.jpg" style="width: 300px"></p>    
+<p><button id="plus5">Plus 5</button> <button id="until10BulletBills">Until 10 Bullet Bills</button> <button id="setNumber">Set Your Own Number: <input id="numberSet"></input></button></p>
+
+<h3>TOTALS -></h3>
+    <p>
+      Banana: <span id="banana">0</span> |
+      Green Shell: <span id="green-shell">0</span> |
+      Star: <span id="star">0</span> |
+      Golden Mushroom: <span id="golden-mushroom">0</span> |
+      Bullet Bill: <span id="bullet-bill">0</span>
+    </p>
+    <hr>
+
+    <p id="results"></p>
+  </div>
+
+
+  <!--  LOAD JAVASCRIPT -->
+  <script src="main.js"></script>
+
+</body>
+
+</html>
